@@ -17,3 +17,4 @@ nums = [1,2,3]
 k = 3
 test = Solution()
 print(test.subarraySum(nums,k))
+print(12312321321)
