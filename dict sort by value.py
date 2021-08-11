@@ -118,3 +118,28 @@ print(max_value_key)  # 'b'
 # 根据键获取对应的值
 max_value = dict1[max_key]
 print(max_value)  # 321
+
+
+# 并集 |  以第一个dict为准
+a = {"one": 1, "two": 2, "three": 3}
+b = {"one": 111, "three": 3, "four": 4}
+
+c = dict(a.items() | b.items())
+print(c)  # key"one"的值没有被修改 {'four': 4, 'one': 1, 'three': 3, 'two': 2}
+
+
+
+# 交集 &
+a = {"one": 1, "two": 2, "three": 3}
+b = {"one": 111, "three": 3, "four": 4}
+
+c = dict(a.items() & b.items())
+print(c)  # {'three': 3}
+
+
+# 差集  从第一个字典中移除与第二个字典相同的键值对
+a = {"one": 1, "two": 2, "three": 3}
+b = {"one": 111, "three": 3, "four": 4}
+
+c = dict(a.items() - b.items())
+print(c)  # {'two': 2, 'one': 1}
