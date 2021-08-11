@@ -1,3 +1,9 @@
+# 1 construct dict
+dict3 = dict(zip(["one", "two", "three"], [1, 2, 3]))
+dict4 = dict([("one", 1), ("two", 2), ("three", 3)])
+
+
+# 2 sort dict by values
 x = {1: (2,3), 3: (4,5), 4: (3,1), 2: (1,-1), 0: (0,100)}
 
 b = sorted(x.items(), key=lambda item: item[1][1])
@@ -63,7 +69,7 @@ print(rows_by_score_id)
 
 
 
-# del item from dict
+# 3 del item from dict
 x = {1: (2,3), 3: (4,5), 4: (3,1), 2: (1,-1), 0: (0,100)}
 x.pop(0) # key = 0
 x.popitem() # remove the last element of dict
@@ -73,7 +79,7 @@ print(x)
 
 
 
-# dict update
+# 4 dict update
 d1 = {'a': 10, 'b': 20, 'c': 30}
 d2 = {'b': 200, 'd': 400}
 
@@ -88,7 +94,7 @@ print(d1)
 
 
 
-# dict max/min
+# 5 dict max/min
 dict1 = {"a": 123, "b": 321, "c": 200}
 
 # 获取max value及其对应的key
